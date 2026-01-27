@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Conta - ChefClip</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #FEFCFB;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { color: #E85D04; margin-bottom: 10px; }
+        h2 { color: #2D6A4F; margin: 25px 0 15px; }
+        p, li { margin-bottom: 10px; }
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        .logo { font-size: 48px; margin-bottom: 10px; }
+        .app-name { color: #E85D04; font-weight: bold; }
+        .step {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #E85D04;
+        }
+        .step-number {
+            background: #E85D04;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .contact {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #E85D04;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn:hover { background: #C94D00; }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .data-table th {
+            background: #E85D04;
+            color: white;
+        }
+        .deleted { color: #22C55E; font-weight: bold; }
+        .retained { color: #F59E0B; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="logo">👨‍🍳</div>
+    <h1>Exclusão de Conta</h1>
+    <p><span class="app-name">ChefClip - Receitas de Vídeos</span></p>
+
+    <h2>Como solicitar a exclusão da sua conta</h2>
+
+    <p>Você pode solicitar a exclusão completa da sua conta e dados do ChefClip seguindo os passos abaixo:</p>
+
+    <div class="step">
+        <span class="step-number">1</span>
+        <strong>Pelo App (Recomendado)</strong>
+        <p>Abra o ChefClip → Configurações → Conta → "Excluir minha conta"</p>
+    </div>
+
+    <div class="step">
+        <span class="step-number">2</span>
+        <strong>Por E-mail</strong>
+        <p>Envie um e-mail para <strong>suporte@chefclip.app</strong> com:</p>
+        <ul>
+            <li>Assunto: "Solicitação de Exclusão de Conta"</li>
+            <li>E-mail da conta Google usada no app</li>
+            <li>Confirmação de que deseja excluir todos os dados</li>
+        </ul>
+    </div>
+
+    <h2>Dados que serão excluídos</h2>
+
+    <table class="data-table">
+        <tr>
+            <th>Tipo de Dado</th>
+            <th>Ação</th>
+            <th>Prazo</th>
+        </tr>
+        <tr>
+            <td>Informações da conta (nome, e-mail)</td>
+            <td class="deleted">Excluído</td>
+            <td>Imediato</td>
+        </tr>
+        <tr>
+            <td>Foto de perfil</td>
+            <td class="deleted">Excluído</td>
+            <td>Imediato</td>
+        </tr>
+        <tr>
+            <td>Receitas salvas</td>
+            <td class="deleted">Excluído</td>
+            <td>Imediato</td>
+        </tr>
+        <tr>
+            <td>Preferências do app</td>
+            <td class="deleted">Excluído</td>
+            <td>Imediato</td>
+        </tr>
+        <tr>
+            <td>Histórico de extrações</td>
+            <td class="deleted">Excluído</td>
+            <td>Imediato</td>
+        </tr>
+        <tr>
+            <td>Logs de sistema (anonimizados)</td>
+            <td class="retained">Retido*</td>
+            <td>30 dias</td>
+        </tr>
+    </table>
+
+    <p><small>* Logs de sistema são mantidos de forma anônima por 30 dias para fins de segurança e diagnóstico, sem possibilidade de identificar o usuário.</small></p>
+
+    <div class="warning">
+        <strong>⚠️ Atenção:</strong> A exclusão da conta é permanente e irreversível. Todas as suas receitas salvas serão perdidas. Recomendamos exportar suas receitas antes de solicitar a exclusão.
+    </div>
+
+    <h2>Prazo de processamento</h2>
+    <p>Sua solicitação será processada em até <strong>48 horas</strong>. Você receberá um e-mail de confirmação quando a exclusão for concluída.</p>
+
+    <div class="contact">
+        <h2 style="margin-top: 0;">Contato</h2>
+        <p>Dúvidas sobre a exclusão de dados?</p>
+        <p><strong>E-mail:</strong> suporte@chefclip.app</p>
+        <a href="mailto:suporte@chefclip.app?subject=Solicitação de Exclusão de Conta" class="btn">Solicitar Exclusão por E-mail</a>
+    </div>
+
+    <p style="margin-top: 30px; color: #666; font-size: 14px;">
+        <a href="index.html">Política de Privacidade</a> |
+        <a href="terms.html">Termos de Uso</a>
+    </p>
+</body>
+</html>
