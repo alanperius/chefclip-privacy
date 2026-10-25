@@ -85,25 +85,23 @@
 <body>
     <div class="logo">👨‍🍳</div>
     <h1>Exclusão de Conta</h1>
-    <p><span class="app-name">ChefClip - Receitas de Vídeos</span></p>
+    <p><span class="app-name">ChefClip</span> &mdash; desenvolvido por <strong>Alan Spohr Perius</strong></p>
 
     <h2>Como solicitar a exclusão da sua conta</h2>
 
     <p>Você pode solicitar a exclusão completa da sua conta e dados do ChefClip seguindo os passos abaixo:</p>
 
-    <div class="step">
-        <span class="step-number">1</span>
-        <strong>Pelo App (Recomendado)</strong>
-        <p>Abra o ChefClip → Configurações → Conta → "Excluir minha conta"</p>
-    </div>
+    <!-- Caminho pelo app removido ate a build 1.0.34 chegar a 100% do rollout.
+         Depois, recolocar como opcao 1: "Abra o ChefClip -> Configuracoes -> Zona de Perigo -> Excluir minha conta". -->
 
     <div class="step">
-        <span class="step-number">2</span>
+        <span class="step-number">1</span>
         <strong>Por E-mail</strong>
-        <p>Envie um e-mail para <strong>suporte@chefclip.app</strong> com:</p>
+        <p>Envie um e-mail para <strong>alan.perius.mv@gmail.com</strong> com:</p>
         <ul>
             <li>Assunto: "Solicitação de Exclusão de Conta"</li>
-            <li>E-mail da conta Google usada no app</li>
+            <li>O e-mail usado para entrar no app (Google ou Apple). Envie a mensagem a partir desse e-mail ou informe-o no texto, para confirmarmos que o pedido é seu.</li>
+            <li>Se você entrou com a Apple e escolheu "ocultar meu e-mail", informe o endereço de retransmissão (<strong>@privaterelay.appleid.com</strong>) que recebe os e-mails do app.</li>
             <li>Confirmação de que deseja excluir todos os dados</li>
         </ul>
     </div>
@@ -117,51 +115,59 @@
             <th>Prazo</th>
         </tr>
         <tr>
-            <td>Informações da conta (nome, e-mail)</td>
+            <td>Conta (nome, e-mail, foto de perfil) e login</td>
             <td class="deleted">Excluído</td>
-            <td>Imediato</td>
+            <td>Até 7 dias</td>
         </tr>
         <tr>
-            <td>Foto de perfil</td>
+            <td>Receitas salvas, coleções e cardápio</td>
             <td class="deleted">Excluído</td>
-            <td>Imediato</td>
+            <td>Até 7 dias</td>
         </tr>
         <tr>
-            <td>Receitas salvas</td>
+            <td>Histórico de preparo e favoritos</td>
             <td class="deleted">Excluído</td>
-            <td>Imediato</td>
+            <td>Até 7 dias</td>
         </tr>
         <tr>
-            <td>Preferências do app</td>
+            <td>Preferências do app e histórico de extrações</td>
             <td class="deleted">Excluído</td>
-            <td>Imediato</td>
+            <td>Até 7 dias</td>
         </tr>
         <tr>
-            <td>Histórico de extrações</td>
-            <td class="deleted">Excluído</td>
-            <td>Imediato</td>
-        </tr>
-        <tr>
-            <td>Logs de sistema (anonimizados)</td>
+            <td>Texto das mensagens de feedback (sem e-mail e sem vínculo com a conta)</td>
             <td class="retained">Retido*</td>
-            <td>30 dias</td>
+            <td>Sem prazo</td>
+        </tr>
+        <tr>
+            <td>Eventos de análise (Google Analytics) ligados ao ID da conta</td>
+            <td class="retained">Retido**</td>
+            <td>Até 2 meses; excluídos nos pedidos por e-mail</td>
+        </tr>
+        <tr>
+            <td>Registros técnicos do servidor (podem conter seu nome ou e-mail)</td>
+            <td class="retained">Retido***</td>
+            <td>Até 30 dias</td>
         </tr>
     </table>
 
-    <p><small>* Logs de sistema são mantidos de forma anônima por 30 dias para fins de segurança e diagnóstico, sem possibilidade de identificar o usuário.</small></p>
+    <p><small>* Mensagens de feedback são mantidas apenas como texto, sem e-mail e sem qualquer vínculo com a sua conta.</small></p>
+    <p><small>** Eventos de análise (Google Analytics) ligados ao ID da conta são mantidos por no máximo 2 meses e, nos pedidos feitos por e-mail, são excluídos.</small></p>
+    <p><small>*** Registros técnicos do servidor são usados só para segurança e diagnóstico e são apagados automaticamente em até 30 dias.</small></p>
+    <p><small>O identificador de publicidade não é armazenado pelo ChefClip: ele pertence ao aparelho e pode ser redefinido nas configurações do Android.</small></p>
 
     <div class="warning">
         <strong>⚠️ Atenção:</strong> A exclusão da conta é permanente e irreversível. Todas as suas receitas salvas serão perdidas. Recomendamos exportar suas receitas antes de solicitar a exclusão.
     </div>
 
     <h2>Prazo de processamento</h2>
-    <p>Sua solicitação será processada em até <strong>48 horas</strong>. Você receberá um e-mail de confirmação quando a exclusão for concluída.</p>
+    <p>Sua solicitação será processada em <strong>até 7 dias</strong>. Você receberá um e-mail de confirmação quando a exclusão for concluída.</p>
 
     <div class="contact">
         <h2 style="margin-top: 0;">Contato</h2>
         <p>Dúvidas sobre a exclusão de dados?</p>
-        <p><strong>E-mail:</strong> suporte@chefclip.app</p>
-        <a href="mailto:suporte@chefclip.app?subject=Solicitação de Exclusão de Conta" class="btn">Solicitar Exclusão por E-mail</a>
+        <p><strong>E-mail:</strong> alan.perius.mv@gmail.com</p>
+        <a href="mailto:alan.perius.mv@gmail.com?subject=Solicitação de Exclusão de Conta" class="btn">Solicitar Exclusão por E-mail</a>
     </div>
 
     <p style="margin-top: 30px; color: #666; font-size: 14px;">
